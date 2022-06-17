@@ -24,7 +24,7 @@ namespace Tes2.Data
             {
                 return _users;
             }
-            return _users.Where(x => x.Name.Contains(name)).ToList();
+            return _users.Where(x => x.Name==name).ToList();
         }
     }
 }
